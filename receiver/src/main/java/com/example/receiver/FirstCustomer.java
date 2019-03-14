@@ -1,13 +1,14 @@
 package com.example.receiver;
 
+import org.springframework.amqp.rabbit.annotation.RabbitHandler;
 import org.springframework.amqp.rabbit.annotation.RabbitListener;
 import org.springframework.stereotype.Component;
 
 @Component
-public class ReceivMq {
-    @RabbitListener(queues = "queue")
+@RabbitListener(queues = "queue1")
+public class FirstCustomer{
+    @RabbitHandler
     public void receive(String str){
-        System.out.println("Receive:"+str);
+        System.out.println("queue1:"+str);
     }
-
 }

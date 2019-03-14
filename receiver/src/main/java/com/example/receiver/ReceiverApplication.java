@@ -7,9 +7,6 @@ import org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfigurat
 import org.springframework.stereotype.Component;
 
 @SpringBootApplication
-//        (scanBasePackages={"com.csjscm.core.suppermark.config"}
-//        ,exclude={DataSourceAutoConfiguration.class,HibernateJpaAutoConfiguration.class})
-
 public class ReceiverApplication {
 
     public static void main(String[] args) {

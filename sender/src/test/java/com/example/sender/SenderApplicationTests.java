@@ -8,7 +8,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class SenderApplicationTests {
+public class SenderApplicationTests  {
     @Autowired
     private SendMq sendMq;
 
